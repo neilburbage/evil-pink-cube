@@ -1,0 +1,158 @@
+/* Try to sort out and separate out the background colours of the different sections of this webpage
+Need to divide into sections in html using div wrappers and gving them class attrbuted then you can target
+them here and style each section */
+/* Nav bar */
+    /* #navBar {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+} */
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    font-family: Unbuntu, sans-serif;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    /* text-align: center; */
+    border-width: 1px;
+    border-style: dashed;
+}
+li, a, button{
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo {
+    cursor: pointer;
+}
+.navLinks {
+    list-style: none;
+    
+}
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navLinks li a {
+    
+    color:indianred;
+    font-size: x-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+}
+.navLinks li a:hover {
+    color: #0088a9;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+/* All div id sections! */
+
+
+#main {
+    font-family: "Roboto",sans-serif;
+    background-color: rgb(185, 216, 99);
+
+}
+
+/* main body of page */
+/* body {
+font-family: "Roboto",sans-serif;
+background-color: rgb(185, 216, 99);
+/* color: black; */
+/* font-size:x-large;
+} 
+nav {
+color:bisque; */ */
+
+/* } */
+/* Styling the table */
+/* Can the style rule of asterisk re: background-color be overwritten so I can make the table nth-child? */
+#uETable {
+    width: 1500px;
+    background-color: tomato;
+    /* border-spacing: 10px; */
+}
+
+th {
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #6cdf0d;  
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+
+}
+
+tr:nth-child(even) {
+ background-color: rgb(36, 190, 105) !important;
+
+}
+tr:nth-child(odd) {
+    background-color: rgb(209, 204, 192) !important;
+}
+
+/* Styling the images */
+
+.bT {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 0 0 0 50px;
+}
+
+.uE {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 0 0 50px;
+    /* object-position: top-middle; */
+}
+
+/* Simple Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: maroon;
+    color:rgb(185, 216, 99);
+    text-align:center;
+}
+
